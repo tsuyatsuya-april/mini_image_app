@@ -4,6 +4,6 @@
   <%= f.submit '送信' %>
   <div id="image-list"></div>
 <% end %>
-<%= @message.images.each do |image| %>
+<% @message.images.each do |image| %>
   <%= image_tag image, class: 'images' %>
 <% end %>
